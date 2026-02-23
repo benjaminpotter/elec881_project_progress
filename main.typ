@@ -84,13 +84,29 @@
 
 ]
 
-#slide(title: "RQ 1")[]
+#slide(title: "RQ 0")[
+  This is my mapping research question.
+]
+
 #slide(title: "RQ 1")[]
 #slide(title: "RQ 1")[]
 
 #slide(title: "Search Method")[
   #framed[This is the search string]
+
+  + Download results from databases as .bib files
+    - Title, author, abstract, venue, date, etc.
+  + Test results for control group of known good publications
+  + Combine results and deduplicate
+  + Apply filtering by title
+  + Apply filtering by abstract
+]
+
+#slide(title: "Control Publications")[
+
 ]
 
 #slide(title: "Search Results")[]
+
+#slide(title: "Exclusion Criteria")[]
 
