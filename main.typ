@@ -23,8 +23,9 @@
 )
 
 #front-slide(
-  title: "Bio-Inspired Celestial Compass for Aircraft Navigation",
-  authors: "Ben Potter, Devyansh Agarwal, Dr. Muhammad Alam, Dr. Yahia Antar, Dr. Jawad Siddiqui",
+  title: "Mapping and Review of Camera Models for Polarization Navigation",
+  subtitle: "Project Progress Report",
+  authors: [Ben Potter \ Supervisors: Dr. Muhammad Alam, Dr. Yahia Antar \ Instructor: Dr. Mariam Guizani],
   info: [Royal Military College of Canada, Collège Militaire Royal du Canada \ Queen's University],
 )
 
@@ -80,6 +81,13 @@
   )
 ]
 
+#slide(title: "Camera Models")[
+  Explain:
+  - What are camera models?
+  - Why are they useful for polarization navigation?
+]
+
+
 #slide(title: "Research Questions")[
 
 ]
@@ -91,22 +99,30 @@
 #slide(title: "RQ 1")[]
 #slide(title: "RQ 1")[]
 
-#slide(title: "Search Method")[
+#slide(title: "Search Method: Search String Piloting")[
   #framed[This is the search string]
 
-  + Download results from databases as .bib files
-    - Title, author, abstract, venue, date, etc.
   + Test results for control group of known good publications
+]
+
+#slide(title: "Search Method: Publication Collection")[
+  + Download results from databases as .bib files
+    - Scopus, IEEExplore, Web of Science, ACM
+    - Title, author, abstract, venue, date, etc.
   + Combine results and deduplicate
-  + Apply filtering by title
-  + Apply filtering by abstract
+    - Deduplication by unique DOI
+  + Assign unique citation key to each entry
 ]
 
-#slide(title: "Control Publications")[
 
+#slide(title: "Search Method: Application of Exclusion Criteria")[
+  + English language title and abstract are not available
+  + DOI is not available (or does not exist)
+  + No contribution toward application of polarization to navigation
+  + No application of a skylight polarization model in methodology
 ]
 
-#slide(title: "Search Results")[]
+#slide(title: "Search Results")[
 
-#slide(title: "Exclusion Criteria")[]
+]
 
