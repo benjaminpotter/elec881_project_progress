@@ -86,7 +86,7 @@
 ]
 
 #slide(title: "Objectives")[
-  + Synthesize all existing research on camera simulation for navigation via skylight polarization
+  + Synthesize research on navigation via skylight polarization
   + Provide a reference from which to offset future contributions
 
   #framed[
@@ -99,35 +99,80 @@
   [1] Kitchenham, Barbara. (2004). Procedures for Performing Systematic Reviews. Keele, UK, Keele Univ.. 33. 
 ]
 
-#slide(title: "Research Questions")[
-  - What physical models are used to predict the atmospheric polarization of skylight?
-  - What camera models are used to simulate measurement of skylight polarization?
-  - What methods are available for quantifying the accuracy of such camera models?
-  - How are simulated skylight polarization measurements used for navigation?
+#slide(title: "Changes from Proposal")[
+  - Expand objective to _full_ mapping study of polarization navigation
+  - Limit prior objective (investigation of camera models) to one research question
+  - Mapping study rather than review
+  
+  Motivation: I need to prepare a _full_ mapping study for my thesis, so why should I limit the objectives to just camera models in this case?
 ]
 
-#slide(title: "RQ 1")[
-  What physical models are used to predict the atmospheric polarization of skylight?
+#slide(title: "Research Questions: Overview")[
+  Methodological Questions:
+  - What are the dominant sensor technologies used to measure skylight polarization?
+  - What computational methods are used to extract navigational cues from skylight polarization?
+
+  Performance and Evaluation Questions:
+  - What evaluation methods are used to quantify the performance of skylight polarization navigation systems?
+  - How has the performance of skylight polarization navigation systems changed over time?
 ]
 
-#slide(title: "RQ 2")[
-  What camera models are used to simulate measurement of skylight polarization?
-]
-
-#slide(title: "RQ 3")[
-  What methods are available for quantifying the accuracy of such camera models?
-]
-
-#slide(title: "RQ 4")[
-  How are simulated skylight polarization measurements used for navigation?
-]
+// #slide(title: "Research Questions 1 & 2: The Ant's Eyes and Brain")[
+//   #cols(columns: (2fr, 1fr))[
+//     What are the dominant sensor technologies used to measure skylight polarization?
+//     - Need to replicate the ant's ability to measure skylight polarization
+//
+//     What algorithms are used to extract navigational cues from skylight polarization?
+//     - Need to parse the measured skylight polarization information into useful navigational cues
+//   ][
+//     #image("figures/ant_head_single.jpg")
+//   ]
+// ]
+//
+// #slide(title: "Research Questions 3 & 4: Evaluation and Trends")[
+//   - What evaluation methods are used to quantify the performance of skylight polarization navigation systems?
+//   - How has the performance of skylight polarization navigation systems changed over time?
+// ]
 
 #slide(title: "Search Method: Search String Generation")[
-  #framed["polarization" AND "sky" AND "navigation" AND ("simulation" OR "model") AND ("camera" OR "sensor" OR "lens")]
+  
+  #table(
+    columns: (1fr, 3fr),
+    table.header()[Concept][Keywords],
+    [Skylight Polarization],
+    [
+      skylight polarization,
+      sky polarization,
+      polarized skylight,
+      polarization pattern
+    ],
 
-  - Search over all fields
-  - Date range from 2016 through 2026
-  - Test results for control group of known good publications
+    [Navigation],
+    [
+      navigation,
+      orientation,
+      heading estimation,
+      localization,
+      positioning,
+      compass
+    ],
+
+    [Autonomous Systems\*],
+    [
+      robot,
+      robotic,
+      UAV,
+      drone,
+      car,
+      autonomous vehicle,
+      navigation system
+    ]
+  )
+
+  - Balancing recall against precision
+  - Alternative spellings e.g., localisation 
+  - AND together concepts; OR together keywords
+  - \*Include this concept to avoid biology-only publications
 ]
 
 #slide(title: "Search Method: Publication Collection")[
@@ -139,7 +184,6 @@
   + Assign unique citation key to each entry
 ]
 
-
 #slide(title: "Search Method: Application of Exclusion Criteria")[
   + English language title and abstract are not available
   + DOI is not available (or does not exist)
@@ -148,7 +192,14 @@
   + Publication is not a primary study
 ]
 
-#slide(title: "Search Results")[
+
+#slide(title: "Prior Search Results")[
+  #framed["polarization" AND "sky" AND "navigation" AND ("simulation" OR "model") AND ("camera" OR "sensor" OR "lens")]
+
+  - Search over all fields
+  - Date range from 2016 through 2026
+  - Test results for control group of known good publications
+
   #table(
     columns: (1fr, 1fr),
     table.header()[Database][Number of Publications],
@@ -164,9 +215,11 @@
 
 #slide(title: "Challenges and Next Steps")[
   Challenges:
-  - Defining research questions
+  - Defining research questions and scope
 
   Next steps:
+  - Apply new search string to databases
   - Complete title and abstract screening
+  - Design data extraction form
 ]
 
