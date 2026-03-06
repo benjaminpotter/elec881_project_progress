@@ -23,14 +23,18 @@
 )
 
 #front-slide(
-  title: "Mapping and Review of Camera Models for Polarization Navigation",
-  subtitle: "Project Progress Report",
+  title: "Systematic Mapping of Polarization-based Navigation Methods",
+  subtitle: "Project Progress Report: March 9, 2026",
   authors: [Ben Potter \ Supervisors: Dr. Muhammad Alam, Dr. Yahia Antar \ Instructor: Dr. Mariam Guizani],
   info: [Royal Military College of Canada, Collège Militaire Royal du Canada \ Queen's University],
 )
 
 #slide(title: "Outline")[
-
+  + Research Context
+  + Research Questions
+  + Search Method
+  + Preliminary Search Results
+  + Challenges and Next Steps
 ]
 
 #slide(title: "Motivation")[
@@ -81,28 +85,49 @@
   )
 ]
 
-#slide(title: "Camera Models")[
-  Explain:
-  - What are camera models?
-  - Why are they useful for polarization navigation?
-]
+#slide(title: "Objectives")[
+  + Synthesize all existing research on camera simulation for navigation via skylight polarization
+  + Provide a reference from which to offset future contributions
 
+  #framed[
+    there are systematic reviews that ask questions that are primarily of interest to researchers.
+    Such reviews ask questions that identify and/or scope future research activities [1] 
+  ]
+
+  #set text(size: 12pt)
+  #set align(bottom)
+  [1] Kitchenham, Barbara. (2004). Procedures for Performing Systematic Reviews. Keele, UK, Keele Univ.. 33. 
+]
 
 #slide(title: "Research Questions")[
-
+  - What physical models are used to predict the atmospheric polarization of skylight?
+  - What camera models are used to simulate measurement of skylight polarization?
+  - What methods are available for quantifying the accuracy of such camera models?
+  - How are simulated skylight polarization measurements used for navigation?
 ]
 
-#slide(title: "RQ 0")[
-  This is my mapping research question.
+#slide(title: "RQ 1")[
+  What physical models are used to predict the atmospheric polarization of skylight?
 ]
 
-#slide(title: "RQ 1")[]
-#slide(title: "RQ 1")[]
+#slide(title: "RQ 2")[
+  What camera models are used to simulate measurement of skylight polarization?
+]
 
-#slide(title: "Search Method: Search String Piloting")[
-  #framed[This is the search string]
+#slide(title: "RQ 3")[
+  What methods are available for quantifying the accuracy of such camera models?
+]
 
-  + Test results for control group of known good publications
+#slide(title: "RQ 4")[
+  How are simulated skylight polarization measurements used for navigation?
+]
+
+#slide(title: "Search Method: Search String Generation")[
+  #framed["polarization" AND "sky" AND "navigation" AND ("simulation" OR "model") AND ("camera" OR "sensor" OR "lens")]
+
+  - Search over all fields
+  - Date range from 2016 through 2026
+  - Test results for control group of known good publications
 ]
 
 #slide(title: "Search Method: Publication Collection")[
@@ -120,9 +145,28 @@
   + DOI is not available (or does not exist)
   + No contribution toward application of polarization to navigation
   + No application of a skylight polarization model in methodology
+  + Publication is not a primary study
 ]
 
 #slide(title: "Search Results")[
+  #table(
+    columns: (1fr, 1fr),
+    table.header()[Database][Number of Publications],
+    [ACM], [10],
+    [Scopus], [779],
+    [Web of Science], [35],
+    [IEEEXplore], [19],
+    [Total], [843]
+  )
 
+  All results retrieved on Feb. 23, 2026
+]
+
+#slide(title: "Challenges and Next Steps")[
+  Challenges:
+  - Defining research questions
+
+  Next steps:
+  - Complete title and abstract screening
 ]
 
