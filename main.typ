@@ -88,6 +88,7 @@
 #slide(title: "Objectives")[
   + Synthesize research on navigation via skylight polarization
   + Provide a reference from which to offset future contributions
+  + Prepare a literature review for my master's thesis
 
   #framed[
     there are systematic reviews that ask questions that are primarily of interest to researchers.
@@ -97,6 +98,26 @@
   #set text(size: 12pt)
   #set align(bottom)
   [1] Kitchenham, Barbara. (2004). Procedures for Performing Systematic Reviews. Keele, UK, Keele Univ.. 33. 
+]
+
+#slide(title: "Prior Search Results")[
+  #framed["polarization" AND "sky" AND "navigation" AND ("simulation" OR "model") AND ("camera" OR "sensor" OR "lens")]
+
+  - Search over all fields
+  - Date range from 2016 through 2026
+  - Test results for control group of known good publications
+
+  #table(
+    columns: (1fr, 1fr),
+    table.header()[Database][Number of Publications],
+    [ACM], [10],
+    [Scopus], [779],
+    [Web of Science], [35],
+    [IEEEXplore], [19],
+    [Total], [843]
+  )
+
+  All results retrieved on Feb. 23, 2026
 ]
 
 #slide(title: "Changes from Proposal")[
@@ -133,6 +154,15 @@
 //   - What evaluation methods are used to quantify the performance of skylight polarization navigation systems?
 //   - How has the performance of skylight polarization navigation systems changed over time?
 // ]
+//
+
+#slide(title: "Search Method: Procedure Overview")[
+  + Search string generation and piloting (iterate)
+  + Develop exclusion criteria
+  + Title and abstract screening
+  + Develop data extraction form
+  + Full-text screening and data extraction
+]
 
 #slide(title: "Search Method: Search String Generation")[
   
@@ -175,51 +205,93 @@
   - \*Include this concept to avoid biology-only publications
 ]
 
-#slide(title: "Search Method: Publication Collection")[
-  + Download results from databases as .bib files
-    - Scopus, IEEExplore, Web of Science, ACM
-    - Title, author, abstract, venue, date, etc.
-  + Combine results and deduplicate
-    - Deduplication by unique DOI
-  + Assign unique citation key to each entry
+#slide(title: "Search Method: Piloting with Known Relevant Papers")[
+  #grid(
+    columns: (1fr, 2fr),
+    [
+      Determine strength of search string by ensuring known relevant papers are included.
+      - Build list of relevant papers from preliminary literature review 
+      - Include my previous publications in this list
+    ],
+    [
+      #image("figures/screenshot-20260309-121004.png")
+    ]
+  )
 ]
 
-#slide(title: "Search Method: Application of Exclusion Criteria")[
+#slide(title: "Search Method: Publication Collection")[
+  #grid(
+    columns: (1fr, 1fr),
+    [
+      + Download results from databases in RIS format
+        - Scopus, IEEExplore, Web of Science, ACM
+        - Title, author, abstract, venue, date, etc.
+      + Combine results and deduplicate
+        - Deduplication by unique DOI
+      + Assign unique citation key to each entry
+    ],
+    [
+      #image("figures/scopus.png")
+      #image("figures/ieee_xplore.jpg")
+    ]
+  )
+]
+
+#slide(title: "Search Method: Exclusion Criteria")[
   + English language title and abstract are not available
   + DOI is not available (or does not exist)
-  + No contribution toward application of polarization to navigation
-  + No application of a skylight polarization model in methodology
+  + No contribution toward application of skylight polarization to navigation
   + Publication is not a primary study
 ]
 
 
-#slide(title: "Prior Search Results")[
-  #framed["polarization" AND "sky" AND "navigation" AND ("simulation" OR "model") AND ("camera" OR "sensor" OR "lens")]
+#slide(title: "Search Method: Title and Abstract Screening")[
+  #set align(center)
+  Custom Bib Review Tool
+  #image("figures/bib_review_tool.png", height: 80%)
+]
 
-  - Search over all fields
-  - Date range from 2016 through 2026
-  - Test results for control group of known good publications
+#slide(title: "Search Method: Title and Abstract Screening")[
+  #set align(center)
+  Abstrackr Review Tool
+  #image("figures/abstrakr.png", height: 80%)
+]
 
+#slide(title: "Search Method: Classification Scheme")[
   #table(
-    columns: (1fr, 1fr),
-    table.header()[Database][Number of Publications],
-    [ACM], [10],
-    [Scopus], [779],
-    [Web of Science], [35],
-    [IEEEXplore], [19],
-    [Total], [843]
-  )
+    columns: (1fr, 2fr),
 
-  All results retrieved on Feb. 23, 2026
+    table.header()[Category][Fields],
+
+    "Bibliographic Information",
+    [Paper ID & Title, Authors & Year, Venue & Publisher],
+
+    "Application Context",
+    [Platform (robot / UAV / vehicle), Environment (outdoor / indoor / sim), Navigation task, Bio-inspired approach (Y/N)],
+
+    "Sensor Technology  (RQ1)",
+    [Sensor type & category, Polarization params (AoP, DoP, Stokes), Spectral range & channels, Commercial vs. custom],
+
+    "Computational Methods  (RQ2)",
+    [Algorithm category, Heading extraction method, Sky model (e.g., Rayleigh), Sensor fusion & real-time capability],
+
+    "Evaluation Methodology  (RQ3)",
+    [Evaluation environment, Experiment type, Ground truth source, Dataset availability & \# trials],
+
+    "Performance Metrics  (RQ4)",
+    [Heading & max error (°), Localization error, Robustness evaluation, Computational cost],
+  )
 ]
 
 #slide(title: "Challenges and Next Steps")[
   Challenges:
   - Defining research questions and scope
+  - Balancing recall against precision in the search string
+  - Managing large numbers of publications efficiently
 
   Next steps:
   - Apply new search string to databases
   - Complete title and abstract screening
-  - Design data extraction form
+  - Refine and apply data extraction form during full-text screening
 ]
 
